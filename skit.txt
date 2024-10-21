@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS SMS;
+
+USE SMS;
+
+CREATE TABLE Student (
+    sid INT AUTO_INCREMENT PRIMARY KEY,
+    sname VARCHAR(50) NOT NULL,
+    fees DECIMAL(8, 2),
+    M1 INT,
+    M2 INT,
+    M3 INT
+);
+
+
+INSERT INTO Student (sname, fees, M1, M2, M3) VALUES
+('John Doe', 15000.50, 85, 78, 91),
+('Alice Smith', 18000.00, 92, 88, 95),
+('Bob Johnson', 16000.75, 76, 84, 80),
+('Charlie Brown', 17500.25, 88, 90, 85),
+('David Wilson', 15500.00, 82, 81, 79),
+('Emily Davis', 17000.10, 91, 87, 93),
+('Frank Thomas', 16500.75, 78, 85, 83),
+('Grace Martin', 18000.50, 94, 90, 92),
+('Henry White', 15800.90, 80, 77, 86),
+('Isabella Taylor', 16250.00, 89, 82, 88),
+('Jack Harris', 14800.00, 87, 79, 81),
+('Karen Lewis', 17200.75, 90, 89, 94),
+('Liam Clark', 16950.25, 85, 83, 87),
+('Mia Young', 16000.00, 91, 86, 88),
+('Noah Allen', 18000.50, 88, 90, 84),
+('Olivia Walker', 17500.00, 93, 91, 92),
+('Peter King', 15700.30, 81, 79, 82),
+('Quinn Scott', 16550.20, 84, 85, 87),
+('Ryan Adams', 15000.00, 79, 80, 78),
+('Sophia Carter', 17000.40, 92, 89, 90);
